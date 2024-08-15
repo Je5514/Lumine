@@ -12,10 +12,13 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -20%);
+            transform: translate(-50%, -30%);
             background-position: center;
             transition: all 0.5s;
-            opacity: 0.2;
+            // opacity: 0.3;
+            @media #{$md}{
+                transform: translate(-50%, -20%);
+            }
         }
     }  
     .video__text{
@@ -24,14 +27,18 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100%;
+        width: 100%;    
         h1{
-            color: #fff;
-            font-size: rem(120);
+            color: #ffffff;
+            font-size: rem(40);
             text-transform: uppercase;
             text-align: center;
             max-width: rem(900);
             margin: 0 auto;
+            font-family: "Pacifico", cursive;
+            @media #{$md}{
+                font-size: rem(120);
+            }
         }
     }
 }
