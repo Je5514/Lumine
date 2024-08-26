@@ -3,5 +3,12 @@ block variables
 	-var active = 'Home'
 	-var bodyClass = 'theme--default'
 block story
+	include ../components/sticky-menu/sticky-menu.pug
+	.section.section--home#home
+		.container 
+			//- include ../components/banner/banner.pug
+	.section.section--about#about
+	.section.section--service#service
+	.section.section--contact#contact
 
 	

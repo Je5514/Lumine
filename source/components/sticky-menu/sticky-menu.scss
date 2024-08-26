@@ -1,0 +1,48 @@
+.ben.sticky-menu {
+    ul {
+        position: fixed;
+        left: 0;
+        bottom: 5%;
+        // transform: translateY(50%);
+        li {
+            list-style: none;
+            position: relative;
+            margin-left: 8px;
+            transition: all 0.3s ease-in-out;
+            // cursor: pointer;
+            &:after {
+                content: " ";
+                position: absolute;
+                left: rem(10);
+                bottom: 50%;
+                transform: translateY(50%);
+                width: 30%;
+                height: 1px;
+                background: #fff;
+                transition: all 0.3s ease-in-out;
+            }
+            a {
+                color: #fff;
+                padding-left: rem(40);
+                font-size: 12px;
+                text-transform: uppercase;
+                display: flex;
+                // justify-content: flex-end;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                text-decoration: none;
+            }
+            &:hover {
+                padding: 6px 0;
+                &:after {
+                    // width: 50%;
+                    // height: rem(2);
+                    background-color: $purple;
+                }
+                a {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
