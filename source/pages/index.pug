@@ -3,12 +3,16 @@ block variables
 	-var active = 'Home'
 	-var bodyClass = 'theme--default'
 block story
-	include ../components/sticky-menu/sticky-menu.pug
-	.section.section--home#home
-		.container 
-			//- include ../components/banner/banner.pug
+	//- include ../components/sticky-menu/sticky-menu.pug
+	//- .section.section--hero#home
+	//- 	include ../components/banner/banner.pug
+	.section.section--hero#home 
+		include ../components/hero/hero.pug
 	.section.section--about#about
-	.section.section--service#service
-	.section.section--contact#contact
+		.container 
+			include ../components/aboutme/aboutme.pug
+	.section.section--experience#experience 
+			.container 
+				include ../components/experience/experience.pug
 
 	
