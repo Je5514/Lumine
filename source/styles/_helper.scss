@@ -17,8 +17,15 @@ img {
 	align-items: center;
 	justify-content: center;
 	padding: rem(80) 0;
-	
+	background-color: #000;
+	position: relative;
+	z-index: 2;
+	&--hero{
+		background-color: transparent;
+		padding: 0;
+	}
 }
+
 h1, h2, h3, h4, h5, h6{
 	// text-align: center;
 }
